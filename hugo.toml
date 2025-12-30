@@ -1,4 +1,4 @@
-baseURL = 'https://nhathoang79.github.io/my-tech-blog/'
+baseURL = 'https://nhathoang79.github.io/'
 languageCode = 'vi-vn'
 title = "Mai Trần Nhật Hoàng | Network Engineer."
 theme = 'PaperMod'
