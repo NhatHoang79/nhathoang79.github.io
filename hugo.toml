@@ -1,0 +1,49 @@
+baseURL = 'https://nhathoang79.github.io/my-tech-blog/'
+languageCode = 'vi-vn'
+title = "Mai Trần Nhật Hoàng | Network Engineer."
+theme = 'PaperMod'
+
+
+[markup.goldmark.renderer]
+    unsafe = true
+defaultTheme = "dark"
+    ShowReadingTime = true
+    ShowShareButtons = true
+    ShowPostNavLinks = true
+    ShowCodeCopyButtons = true
+    [params.profileMode]
+        enabled = true
+        title = "Mai Trần Nhật Hoàng "
+        subtitle = "🚀 Chuyên gia Hệ thống & Mạng | Java & JavaScript Developer | HUTECH"
+        imageUrl = "anhdep.jpg"
+        imageWidth = 380
+        imageHeight = 400
+        imageDisplay = "Rounded"
+        buttons = [
+            { name = "Xem bài viết", url = "/posts" },
+            { name = "Dự án", url = "/projects" },
+            { name = "Profile", url = "/about" }
+        ] 
+socialIcons = [
+        { name = "facebook", url = "https://facebook.com/ten-cua-ban" },
+        { name = "github", url = "https://github.com/ten-cua-ban" },
+        { name = "instagram", url = "https://instagram.com/ten-cua-ban" }
+    ]
+
+[menu]
+    [[menu.main]]
+        name = "Bài Viết"
+        url = "/posts"
+        weight = 10
+    [[menu.main]]
+        name = "Dự án"
+        url = "/projects" 
+        weight = 15
+    [[menu.main]]
+        name = "Profile"
+        url = "/about"
+        weight = 20
+    [[menu.main]]
+        name = "Liên hệ"
+        url = "/contact"
+        weight = 25

@@ -1,0 +1,104 @@
+/* Hiệu ứng cho các nút ở giữa trang */
+.button {
+    background: linear-gradient(135deg, #424242 0%, #212121 100%) !important;
+    border-radius: 8px !important;
+    transition: all 0.3s ease !important;
+    border: 1px solid #444 !important;
+}
+.button:hover, .first-button:hover, .secondary-button:hover {
+    background: linear-gradient(135deg, #00c6ff 0%, #0072ff 100%) !important;
+    transform: translateY(-5px) !important; /* Đẩy lên mạnh hơn chút cho rõ */
+    box-shadow: 0 10px 20px rgba(0, 198, 255, 0.6) !important;
+}
+
+/* Hiệu ứng cho Menu phía trên */
+.menu a:hover {
+    color: #00c6ff !important;
+    text-decoration: underline;
+}
+/* Hiệu ứng cho danh sách bài viết */
+.post-entry {
+    background: #2e2e33 !important; /* Màu nền xám đậm sang trọng */
+    border-radius: 15px !important; /* Bo tròn góc thẻ bài viết */
+    margin-bottom: 20px !important;
+    transition: all 0.3s ease !important; /* Hiệu ứng chuyển động mượt */
+    border: 1px solid #3d3d42 !important;
+}
+
+/* Hiệu ứng khi di chuột vào từng bài viết */
+.post-entry:hover {
+    transform: scale(1.02) !important; /* Phóng to nhẹ bài viết */
+    background: #35353a !important;
+    box-shadow: 0 10px 25px rgba(0, 198, 255, 0.2) !important; /* Đổ bóng xanh nhẹ */
+    border-color: #00c6ff !important; /* Đổi màu viền sang xanh neon */
+}
+
+/* Làm đẹp tiêu đề bài viết */
+.entry-header h2 {
+    color: #00c6ff !important; /* Đổi màu tiêu đề sang xanh cho nổi bật */
+    transition: color 0.3s ease;
+}
+
+.post-entry:hover .entry-header h2 {
+    color: #ffffff !important;
+}
+/* Container chia ô */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* Container chia ô - Chỉnh lại để ô rộng ra */
+.project-grid {
+    display: grid;
+    /* Tăng minmax lên 450px để mỗi ô to và rộng hơn hẳn */
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr)); 
+    gap: 30px; /* Tăng khoảng cách giữa các ô cho thoáng */
+    margin-top: 30px;
+    width: 100%; /* Đảm bảo dàn hàng ngang hết chiều rộng trang */
+}
+
+/* Làm cho trang rộng ra giống trang của Đức */
+.main {
+    max-width: 1000px !important; 
+}
+
+.project-grid {
+    display: flex;
+    flex-direction: column; /* Xếp hàng dọc cho giống mẫu của Đức */
+    gap: 40px;
+    margin-top: 30px;
+}
+
+.project-card {
+    background: transparent !important; /* Để nền trong suốt giống mẫu */
+    border-bottom: 1px solid #333 !important; /* Dùng đường kẻ ngang phân cách */
+    padding-bottom: 30px;
+    transition: all 0.3s ease;
+}
+
+.project-features {
+    margin-left: 20px !important;
+    color: #b3b3b3;
+    list-style-type: disc;
+    margin-bottom: 15px;
+}
+
+.tech-stack {
+    font-size: 0.9rem;
+    color: #888;
+}
+
+/* Nút GitHub giống của Đức */
+.github-btn {
+    display: inline-block;
+    padding: 8px 16px;
+    background: #333;
+    border-radius: 6px;
+    color: white !important;
+    text-decoration: none;
+    font-size: 0.85rem;
+    margin-top: 15px;
+}
