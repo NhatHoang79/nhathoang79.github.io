@@ -46,4 +46,4 @@ socialIcons = [
     [[menu.main]]
         name = "Liên hệ"
         url = "/contact"
-        weight = 25
+        weight = 28
